@@ -38,6 +38,10 @@ img{max-width:100%}
   h2{font-size:32px!important}
   header nav{gap:14px!important;font-size:15px!important}
   header nav a:not(:last-child){display:none}
+  header.top{flex-wrap:nowrap!important;padding:16px 18px!important;gap:10px!important}
+  header.top .logo{height:50px!important}
+  header.top nav{flex-wrap:nowrap!important;flex-shrink:0}
+  header.top nav a:last-child{padding:10px 14px!important;font-size:15px!important;white-space:nowrap}
   #top{gap:32px!important}
   #cene>div{padding:28px!important}
   .sticker{display:none!important}
@@ -50,10 +54,10 @@ img{max-width:100%}
 <div style="font-family: 'Nunito', system-ui, sans-serif; color: #24132F; background: #F7F1FB; overflow: hidden">
 
 <!-- NAV -->
-<header style="max-width: 1200px; margin: 0 auto; padding: 22px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<header class="top" style="max-width: 1200px; margin: 0 auto; padding: 22px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
   <a href="#top" style="display: flex; flex-direction: column; align-items: flex-start; gap: 2px; text-decoration: none; color: #24132F">
-    <span style="font-size: 11px; font-weight: 800; letter-spacing: 2px; color: #6A2C91; padding-left: 6px">PANSION ZA ČUVANJE MAČAKA · U ZRENJANINU</span>
-    <img src="img/logo.png" alt="Dušica" style="display: block; height: 64px; width: auto">
+    <span class="lbl" style="display: flex; flex-direction: column; font-size: 12px; font-weight: 800; letter-spacing: 2px; color: #6A2C91; padding-left: 6px; line-height: 1.35; white-space: nowrap"><span>PANSION ZA MAČKE</span><span style="color: #4B1C6A">U ZRENJANINU</span></span>
+    <img class="logo" src="img/logo.png" alt="Dušica" style="display: block; height: 64px; width: auto">
   </a>
   <nav aria-label="Glavni meni" style="display: flex; flex-wrap: wrap; align-items: center; gap: 28px; font-weight: 700; font-size: 16px">
     <a href="#prostor" style="color: #24132F; text-decoration: none">Naš prostor</a>
